@@ -1,0 +1,64 @@
+import turtle
+import time
+#varibales
+counter = 0
+pointer = turtle.Turtle()
+
+
+# directions are described with an angle
+pointer.right(90)
+pointer.forward(100)
+pointer.left(180)
+pointer.forward(200)
+pointer.right(180)
+pointer.forward(100)
+
+pointer.left(90)
+pointer.forward(100)
+pointer.right(90)
+pointer.forward(100)
+pointer.left(180)
+pointer.forward(200)
+pointer.right(180)
+pointer.forward(100)
+
+pointer.left(90)
+
+#lifting the pen up
+pointer.penup()
+pointer.forward(100)
+pointer.right(90)
+pointer.pendown()
+pointer.forward(100)
+pointer.left(180)
+pointer.forward(155)
+
+pointer.penup()
+pointer.forward(40)
+
+#dot of the I
+pointer.pendown()
+pointer.forward(15)
+
+
+#underline
+pointer.penup()
+
+#turning
+while counter < 135:
+    pointer.left(2)
+    pointer.forward(8)
+    counter += 1
+
+time.sleep(2)
+
+pointer.pendown()
+pointer.pencolor("red")
+pointer.forward(250)
+pointer.penup()
+pointer.forward(400)
+
+
+
+#finish text
+turtle.done()
